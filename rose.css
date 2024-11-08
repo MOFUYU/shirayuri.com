@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+/* 表示される全体の指定 */
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #e80d94;
+	color: #000000;
+}
+
+
+/* id=""は先頭に"#" */
+#wrapper {
+	max-width:900px;
+	margin: 0 auto;
+	padding: 0;
+	background-color: #FFFFFF;
+	color: #000000;
+}
+
+header {
+	line-height: 0;
+}
+
+header img {
+	width: 100%;
+	max-width: 900vw;
+}
+
+/* class=""は先頭に"." */
+.page_content {
+	display: flex;
+}
+
+nav {
+	width: 200px;
+	text-align: center;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	list-style: none;
+	margin: 0;
+}
+
+nav li a {
+	background-color: #8e4202;
+	font-size: 1.2rem;
+	color: #261010;
+	display: block;
+	font-weight: bold;
+	line-height: 2.5;
+	text-decoration: none;
+}
+
+nav li a:hover {
+	color: #cb9c50;
+	background-color: #261010;
+}
+
+.now {
+	color: #B28844;
+	background-color: #261010;
+}
+
+main {
+	flex: 1;
+	padding: 1rem;
+}
+
+h1 {
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+h2 {
+	margin: 0 1rem;
+	border-width:0 0 1px 0;
+	border-style: solid;
+	border-color: #261010;
+}
+
+.indent {
+	margin: 1rem 2rem;
+	line-height: 2;
+}
+
+p {
+	margin: 1rem;
+	line-height: 2;
+}
+
+p img {
+	float: left;
+	margin-right: 1rem;
+}
+
+section{
+	clear: both;
+	padding-top: 30px;
+}
+
+table {
+	border: 2px #261010 solid;
+	max-width: 680px;
+	margin: 1rem;
+	border-collapse: collapse;
+}
+
+table th {
+	background-color: #261010;
+	color: #FFFFFF;
+}
+
+table td {
+	border: 2px #261010 solid;
+	line-height: 2;
+}
+
+footer {
+	max-width: 900px;
+	line-height: 3;
+	text-align: center;
+}
+
+@media screen and (max-width: 750px) {
+	.page_content {
+		display: flex;
+		flex-direction: column;
+	}
+	nav {
+		width: 100%;
+	}
+	main {
+		width: 100%;
+	}
+}
